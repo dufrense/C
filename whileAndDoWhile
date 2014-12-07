@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cstring>
+#include <stdio.h>
+using namespace std;
+
+int main(int argc, char *argv[]) {
+
+	int x,sum=0;
+	printf("please input the first number:\n");
+	scanf("%d",&x);	
+	/*
+	while(x>0){
+		sum += x;
+		printf("please input the next number \n");
+		scanf("%d",&x);		
+	}
+	printf("use while ,the sum value is %d",sum);
+	*/
+	
+	do {
+		sum += x;
+		printf("please input the next number \n");
+		scanf("%d",&x);	
+	} while ( x>0 );
+	printf("use do-while,the sum value is %d",sum);
+	return 0;
+}
+
